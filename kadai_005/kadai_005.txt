@@ -1,0 +1,55 @@
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai
+$ mkdir git_challenge
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai
+$ cd git_challenge
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge
+$ git inet
+git: 'inet' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/yoror/Documents/samurai/kadai/git_challenge/.git/
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ echo "">> hello_world.txt
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ echo "Hello, world!">>hello_world.txt
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ git commit -m"最初のコミット"
+[main (root-commit) fec3499] 最初のコミット
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ echo "こんにちは、世界！">>hello_world.txt
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+[main 1b49f1b] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$ git log --oneline
+1b49f1b (HEAD -> main) hello_world.txtを追加
+fec3499 最初のコミット
+
+yoror@YORO-NPC MINGW64 ~/documents/samurai/kadai/git_challenge (main)
+$
